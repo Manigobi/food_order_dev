@@ -1,0 +1,448 @@
+@font-face {
+font-family: myFont;
+
+src: url("./fonts/Coolvetica\ Rg.otf ");
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: myFont;
+}
+.outter{
+height: 100vh;
+width: 100vw;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background-image: linear-gradient(to left ,white,lightgray, white);
+}
+.outter>.main_page{
+height: 90%;
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 0px 30px gray;
+border-radius: 20px;
+}
+/* left side page */
+.main_page>.left_sub{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+letter-spacing: 1px;
+width: 50%;
+height: 100%; 
+background-image: url("./images/login_img1.jpg");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+color: white;
+text-shadow: 0px 0px 10px rgb(39, 37, 37);
+border-radius: 20px 0px 0px 20px;
+}
+
+
+
+.main_page>.left_sub>h1{
+margin-top: 30px;
+margin-bottom: 20px;
+font-size: 40px;
+letter-spacing: 2px;
+}
+.left_sub>.sign_logo{
+margin-bottom: 20px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+}
+.sign_logo>.fb_logo{
+height: 40px;
+width: 40px;
+border: 1px solid lightgray;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.sign_logo>.google_logo{
+height: 40px;
+width: 40px;
+border: 1px solid lightgray;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.sign_logo>.linked_logo{
+height: 40px;
+width: 40px;
+border: 1px solid lightgray;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.sign_logo>.fb_logo>img{
+
+width: 30px;
+height: 30px;
+
+}
+.sign_logo>.google_logo>img{
+
+width: 30px;
+height: 30px;
+
+}
+.sign_logo>.linked_logo>img{
+
+    width: 30px;
+    height: 30px;
+
+}
+.main_page>.left_sub>p{
+margin-bottom: 10px;
+}
+.main_page>.left_sub>form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+     
+}
+.left_sub>form>.user_name{
+border: 2px solid  rgb(236, 230, 230);
+margin-bottom: 10px;
+width: 50%;
+padding: 10px;
+background-color:  rgb(236, 230, 230);
+
+}
+.left_sub>form>.user_name::placeholder{
+letter-spacing: 1.5px;
+color:gray;
+
+}
+
+.left_sub>form>.password{
+border: 2px solid  rgb(236, 230, 230);
+margin-bottom: 10px;
+width: 50%;
+padding: 10px;
+background-color:  rgb(236, 230, 230);
+
+
+}
+.left_sub>form>.password::placeholder{
+letter-spacing: 1.5px;
+color:gray;
+
+}
+
+.left_sub>form>.user_email{
+border: 2px solid  rgb(236, 230, 230);
+margin-bottom: 10px;
+width: 50%;
+padding: 10px;
+background-color:  rgb(236, 230, 230);
+
+}
+.left_sub>form>.user_email::placeholder{
+letter-spacing: 1.5px;
+color:gray;
+
+}
+
+.left_sub>form>.mobile_no{
+border: 2px solid  rgb(236, 230, 230);
+margin-bottom: 10px;
+width: 50%;
+padding: 10px;
+background-color: rgb(236, 230, 230);
+
+}
+.left_sub>.mobile_no::placeholder{
+letter-spacing: 1.5px;
+color:gray;
+
+}
+.left_sub>form>.forget_pass{
+margin-bottom: 20px;
+text-decoration: none;
+color:white;
+
+}
+.left_sub>form>button{
+margin-bottom: 30px;
+width: 30%;
+padding: 10px;
+background-color: #ff4b2b;
+border: 2px solid #ff4b2b;
+color: white;
+border-radius: 20px;
+text-transform: uppercase;
+letter-spacing: 1px;
+cursor: pointer;
+
+}
+
+/* left siniin */
+
+.main_page>.left_sub_sign{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 50%;
+height: 100%; 
+background: linear-gradient(to right, #ff4b2b, #ff416c);
+color: white;
+border-radius: 20px 0px 0px 20px;
+
+}
+
+.left_sub_sign>h1{
+font-size: 40px;
+margin-bottom: 20px;
+letter-spacing: 2px;
+}
+.left_sub_sign>p{
+margin-bottom: 20px;
+text-align: center;
+letter-spacing: 1px;
+}
+.left_sub_sign>button{
+
+width: 30%;
+padding: 10px;
+border: 1px solid white;
+border-radius: 20px;
+text-transform: uppercase;
+letter-spacing: 1px;
+background: linear-gradient(to right, #ff4b2b, #ff416c);
+color: white;
+cursor: pointer;
+}
+/* right side page */
+
+.main_page>.right_sub{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 50%;
+height: 100%; 
+background: linear-gradient(to right, #ff4b2b, #ff416c);
+color: white;
+border-radius: 0px 20px 20px 0px;
+
+}
+.right_sub>h1{
+font-size: 40px;
+margin-bottom: 20px;
+letter-spacing: 2px;
+}
+.right_sub>p{
+margin-bottom: 20px;
+text-align: center;
+letter-spacing: 1px;
+}
+.right_sub>button{
+
+width: 30%;
+padding: 10px;
+border: 1px solid white;
+border-radius: 20px;
+text-transform: uppercase;
+letter-spacing: 1px;
+background: linear-gradient(to right, #ff4b2b, #ff416c);
+color: white;
+cursor: pointer;
+}
+
+
+/* right sign up */
+
+.main_page>.right_sub_sign{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+letter-spacing: 1px;
+width: 50%;
+height: 100%; 
+background-image: url("./images/login_img2.jpg");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+color: white;
+text-shadow: 0px 0px 10px rgb(39, 37, 37);
+border-radius: 0px 20px 20px 0px;
+}
+
+
+
+.main_page>.right_sub_sign>h1{
+margin-top: 30px;
+margin-bottom: 20px;
+font-size: 40px;
+letter-spacing: 2px;
+}
+.right_sub_sign>.sign_logo{
+margin-bottom: 20px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+}
+.sign_logo>.fb_logo{
+height: 40px;
+width: 40px;
+border: 1px solid lightgray;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.sign_logo>.google_logo{
+height: 40px;
+width: 40px;
+border: 1px solid lightgray;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.sign_logo>.linked_logo{
+height: 40px;
+width: 40px;
+border: 1px solid lightgray;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.sign_logo>.fb_logo>img{
+
+width: 30px;
+height: 30px;
+
+}
+.sign_logo>.google_logo>img{
+
+width: 30px;
+height: 30px;
+
+}
+.sign_logo>.linked_logo>img{
+
+    width: 30px;
+    height: 30px;
+
+}
+.main_page>.right_sub_sign>p{
+margin-bottom: 10px;
+}
+.main_page>.right_sub_sign>form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+     
+}
+.right_sub_sign>form>.user_name{
+border: 2px solid  rgb(236, 230, 230);
+margin-bottom: 10px;
+width: 50%;
+padding: 10px;
+background-color:  rgb(236, 230, 230);
+
+}
+.right_sub_sign>form>.user_name::placeholder{
+letter-spacing: 1.5px;
+color:gray;
+
+}
+
+.right_sub_sign>form>.password{
+border: 2px solid  rgb(236, 230, 230);
+margin-bottom: 10px;
+width: 50%;
+padding: 10px;
+background-color:  rgb(236, 230, 230);
+
+
+}
+.right_sub_sign>form>.password::placeholder{
+letter-spacing: 1.5px;
+color:gray;
+
+}
+
+.right_sub_sign>form>.user_email{
+border: 2px solid  rgb(236, 230, 230);
+margin-bottom: 10px;
+width: 50%;
+padding: 10px;
+background-color:  rgb(236, 230, 230);
+
+}
+.right_sub_sign>form>.user_email::placeholder{
+letter-spacing: 1.5px;
+color:gray;
+
+}
+
+.right_sub_sign>form>.mobile_no{
+border: 2px solid  rgb(236, 230, 230);
+margin-bottom: 10px;
+width: 50%;
+padding: 10px;
+background-color: rgb(236, 230, 230);
+
+}
+.right_sub_sign>.mobile_no::placeholder{
+letter-spacing: 1.5px;
+color:gray;
+
+}
+.right_sub_sign>form>.forget_pass{
+margin-bottom: 20px;
+text-decoration: none;
+color:white;
+
+}
+.right_sub_sign>form>button{
+margin-bottom: 30px;
+width: 30%;
+padding: 10px;
+background-color: #ff4b2b;
+border: 2px solid #ff4b2b;
+color: white;
+border-radius: 20px;
+text-transform: uppercase;
+letter-spacing: 1px;
+cursor: pointer;
+
+}
